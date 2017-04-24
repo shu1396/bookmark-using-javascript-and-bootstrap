@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>bookmark</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="css/style1.css" rel="stylesheet">
+
+<head>
+<body onload="fetchBookmarks()">
+<div class="jumbotron">
+  <h2> Bookmark your favourite Sites</h2>
+  <form id="myForm">
+    <div class="form-group">
+      <label>Site name</label>
+      <input type="text" class="form-control" id="siteName" placeholder="Website Name">
+    </div>
+    <div class="form-group">
+    <label>Site URL</label>
+      <input type="text" class="form-control" id="siteURL" placeholder="Website URL">
+    </div>
+    <button type="submit" class="btb btn-primary" > Submit</button>
+  </form>
+</div>
+<div class="row marketing">
+  <div class="col-lg-12">
+	<div id="bookmarksResults"></div>
+  </div >
+ </div>
+  <div>
+    <footer class="footer">
+      <p>&copy; 2016 Bookmarker, inc.</p>
+    </footer>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="bookmarker.js">
+  </script>
+</body>
+</html>
